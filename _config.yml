@@ -42,7 +42,7 @@ collections:
     output: true
   Fladerpapier Sandbox-E:
     output: true
-    layout: 'qatar_item'
+    layout: 'wax/collection_item'
     metadata:
       source: 'Draft- TRACKER-  Fladerpapier - sandbox 3.csv'
     images:
