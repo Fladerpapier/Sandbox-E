@@ -56,7 +56,7 @@ search:
   main:
     index: '/search/index.json'
     collections:
-      Fladerpapier Sandbox-E:
+      Sandbox-E:
         content: false 
         fields: 
           - print
