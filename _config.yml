@@ -1,29 +1,9 @@
-# ==============================================================
-# WAX CONFIGURATION
-# ==============================================================
-# Jekyll configuration files are written in YAML format.
-# Colons, tabs/spacing, and quotes are meaningful in YAML.
-# It is recommended you look at the following guide to avoid
-# syntax errors in this file:
-# ~> https://learnxinyminutes.com/docs/yaml/
-#
-#
-# Questions ?
-# ~> https://minicomp.github.io/wiki/#/
-# ~> https://gitter.im/minicomp/wax/
-#
-# ---------------------------------------------------------------
-# MAIN SETTINGS
-# ---------------------------------------------------------------
-# Feel free to change these! For more info, refer to:
-# ~> https://jekyllrb.com/docs/configuration/options/
-
-title:            'Wax'
-description:      'Minimal Exhibitions with Jekyll'
-url:              'https://minicomp.github.io'
-baseurl:          '/wax'
-copyright:        'Example copyright org, 2019'
-logo:             '/assets/logo.png'
+title:            'Test title for Fladerpaper Sandbox-E'
+description:      'Test description for Fladerpaper Sandbox-E'
+url:              'test URL for Fladerpaper Sandbox-E'
+baseurl:          'baseurl for Fladerpaper Sandbox-E'
+copyright:        'Test copyright for  Fladerpaper Sandbox-E'
+logo:             'test logo for Fladerpaper Sandbox-E'
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
@@ -56,44 +36,35 @@ kramdown:
 # --------------------------------------------------------------
 # COLLECTION SETTINGS
 # --------------------------------------------------------------
-# Wax leverages Jekyll collections for much of its
-# functionality, therefor some of the keys below are from
-# Jekyll while others are Wax-specific.
-# For more info, refer to:
-# ~> https://jekyllrb.com/docs/collections/
 
 collections:
   exhibits:
     output: true
-  qatar: # name of collection
-    output: true # makes sure pages are output as html files
-    layout: 'qatar_item' # the layout for the pages to use
+  Fladerpapier Sandbox-E:
+    output: true
+    layout: 'qatar_item'
     metadata:
-      source: 'qatar.csv' # path to the metadata file within `_data`
+      source: 'Draft- TRACKER-  Fladerpapier - sandbox 3.csv'
     images:
-      source: 'raw_images/qatar' # path to the directory of images within `_data`
+      source: '_data/raw_images'
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
 # --------------------------------------------------------------
-# You can create multiple search indexes below (though only one is
-# recommended!) by specifying
-# an `index` file to write it to and some `collections` for it to index
-# and running `$ bundle exec rake wax:search` .
 
 search:
   main:
-    index: '/search/index.json' # file the index will get written to
+    index: '/search/index.json'
     collections:
-      qatar:
-        content: false # whether or not to index page content
-        fields: # the metadata fields to index
-          - artist
-          - location
+      Fladerpapier Sandbox-E:
+        content: false 
+        fields: 
+          - print
+          - state
+          - palette
           - label
-          - _date
-          - object_type
-          - current_location
+          - credit_line
+        
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
